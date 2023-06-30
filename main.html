@@ -9,92 +9,95 @@
 </head>
 
 <body>
-  
-  
+
+
     <header class="header">
         <div class="nav">
-        <h1 class="h1-creature">Creature Containment Archive</h1></div>
+            <h1 class="h1-creature">Creature Containment Archive</h1>
+        </div>
     </header>
-    
+
     <section id="form">
-    <div class="container">
-        <form id="creature-form" ; required>
-            <h1>Creature Bounty Report</h1>
-           
-            <div class="form-group">
-                <label for="Name">Name</label>
-                <input type="text" id="Name" placeholder="50 Character Limit [A-Z]" class="form-control" max="50">
-            </div>
+        <div class="container">
+            <form id="creature-form" ; required>
+                <h1>Creature Bounty Report</h1>
 
-            <div class="form-group">
-                <label for="Location">Last Known Location</label>
-                <input type="text" placeholder="50 Character Limit [A-Z]" id="Location" class="form-control" max="50">
-            </div>
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name" placeholder="50 Character Limit [A-Z]" class="form-control" max="50">
+                </div>
 
-            <div class="form-group">
-                <label for="Price">Price</label>
-                <input type="number" placeholder="1-999" min="1" max="999" id="Price" class="form-control">
-            </div>
+                <div class="form-group">
+                    <label for="Location">Last Known Location</label>
+                    <input type="text" placeholder="50 Character Limit [A-Z]" id="Location" class="form-control"
+                        max="50">
+                </div>
 
-            <div class="form-group">
-                <label for="Type">Type</label>
-                <select name="select" id="type" class="form-control">
-                    <option disabled selected value> -- select an option -- </option>
-                    <option value="cryptid">Cryptid</option>
-                    <option value="amalgamation">Amalgamation</option>
-                    <option value="lost-one">Lost-One</option>
-                    <option value="oddity">Oddity</option>
-                </select>
-            </div>
-            
-            <div>
-                <label for="bounty">Bounty Available</label>
-                <select name="select" id="bounty">
-                    <option disabled selected value> -- select an option -- </option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select>
-            </div>
-            <input type="submit" id="submit" value="Add Creature">
-            <input type="button" id="clear" value="Reset Form">
+                <div class="form-group">
+                    <label for="Price">Price</label>
+                    <input type="number" placeholder="1-999" min="1" max="999" id="Price" class="form-control">
+                </div>
 
-        </form>
-    </div>
-    </section> 
+                <div class="form-group">
+                    <label for="Type">Type</label>
+                    <select name="select" id="Type" class="form-control">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="cryptid">Cryptid</option>
+                        <option value="amalgamation">Amalgamation</option>
+                        <option value="lost-one">Lost-One</option>
+                        <option value="oddity">Oddity</option>
+                    </select>
+                </div>
 
-<section id="side">
-    <div>
+                <div>
+                    <label for="bounty">Bounty Available</label>
+                    <select name="select" id="Bounty">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <input type="submit" id="submit" value="Add Creature">
+                <input type="button" id="clear" value="Clear Form">
+
+            </form>
+        </div>
+    </section>
+
+    <section id="side">
         <h2>Creatures in Containment</h2>
-    <div class="containment-group"><img src="img/img1.jpg">
-            <h4>YawHee Feller</h4>
-            <h5>Cryptid | Ohio</h5>
-            <p>$300.00</p>
-            <input type="button" id="bounty3" value="No Bounty" disabled>
-            <input type="button" id="remove1" value="Remove">
+        <div>
+            <div class="containment-group"><img src="img/img1.jpg">
+                <h4>YawHee Feller</h4>
+                <h5>Cryptid | Ohio</h5>
+                <p>$300.00</p>
+                <input type="button" id="bounty3" value="No Bounty" disabled>
+                <input type="button" id="remove1" value="Remove" class="remove-button">
+            </div>
+            <div class="containment-group"> <img src="img/img3.jpg" alt="" srcset="">
+                <h4>Brochacho</h4>
+                <h5>Oddity | The Nether</h5>
+                <p>$11.00</p>
+                <input type="button" id="bounty2" value="No Bounty" disabled>
+                <input type="button" id="remove2" value="Remove" class="remove-button">
+            </div>
+            <div class="containment-group"> <img src="img/img5.jpg" alt="" srcset="">
+                <h4>Cyanocobalamin</h4>
+                <h5>Lost-One | Washington</h5>
+                <p>$65.00</p>
+                <input type="button" id="bounty3" value="No Bounty" disabled>
+                <input type="button" id="remove3" value="Remove" class="remove-button">
+            </div>
+            <div class="containment-group"> <img src="img/img6.jpg" alt="" srcset="">
+                <h4>REDACTED</h4>
+                <h5>Amalgamation | REDACTED</h5>
+                <p>$999.00</p>
+                <input type="button" id="bounty4" value="No Bounty" disabled>
+                <input type="button" id="remove4" value="Remove" class="remove-button">
+            </div>
         </div>
-        <div class="containment-group"> <img src="img/img3.jpg" alt="" srcset="">
-            <h4>Brochacho</h4>
-            <h5>Oddity | The Nether</h5>
-            <p>$11.00</p>
-            <input type="button" id="bounty2" value="No Bounty" disabled>
-            <input type="button" id="remove2" value="Remove">
-        </div>
-        <div class="containment-group"> <img src="img/img5.jpg" alt="" srcset="">
-            <h4>Cyanocobalamin</h4>
-            <h5>Lost-One | Washington</h5>
-            <p>$65.00</p>
-            <input type="button" id="bounty3" value="No Bounty" disabled>
-            <input type="button" id="remove3" value="Remove">
-        </div>
-        <div class="containment-group"> <img src="img/img6.jpg" alt="" srcset="">
-            <h4>REDACTED</h4>
-            <h5>Amalgamation | REDACTED</h5>
-            <p>$999.00</p>
-            <input type="button" id="bounty4" value="No Bounty" disabled>
-            <input type="button" id="remove4" value="Remove">
-        </div>
-    </div>
-</section>
+    </section>
+    
 
     <script src="./index.js"></script>
 </body>
