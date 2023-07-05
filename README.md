@@ -6,7 +6,7 @@ Project Scoring
 This project has two different parts on which you will be graded. Each part is weighted differently.
 
 ### Completion
-***
+** [Deployed App via Netlify:](https://creature-archive.netlify.app/)**
 
 #### Set up: 
 
